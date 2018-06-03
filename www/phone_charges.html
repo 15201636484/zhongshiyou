@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/base_server.css">
+    <title>话费查询</title>
+</head>
+<body>
+
+<div class="top-box con-top-box">
+    <div class="top-box-bg clearfix">
+        <a href="javascript:;">
+            <div class="eco-title"></div>
+        </a>
+        <div class="top-right">
+            <ul class="ul-top-left">
+                <li>
+                    <a href="javascript:;">基本业务</a>
+                </li>
+            </ul>
+            <ul class="ul-top-right">
+                <li class="user-name clearfix">
+
+                    <a href="javascript:;">
+                        <div class="avatar-img prompt">
+                            <img src="../img/icon_prompt.png" alt="">
+                        </div>
+                    </a>
+
+                    <a href="javascript:;">
+                        <div class="avatar-img">
+                            <img src="../img/avatar1.png" alt="">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="left-box">
+    <!--bottom-->
+    <ul>
+        <li class="active">
+            <a href="javascript:;">
+                <div class="icon"></div>
+                <span>基本业务</span>
+            </a>
+        </li>
+        <li class="">
+            <a href="javascript:;">
+                <div class="icon"></div>
+                <span>故障维修</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <div class="icon"></div>
+                <span>人员管理</span>
+            </a>
+        </li>
+        <li class="">
+            <a href="javascript:;">
+                <div class="icon"></div>
+                <span>话费上传</span>
+            </a>
+        </li>
+        <li class="">
+            <a href="javascript:;">
+                <div class="icon"></div>
+                <span>业务统计</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+<div class="right-box">
+    <div class="content-box phone-charges">
+        <!-- 内容区-->
+        <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
+
+                <ul id="myTabs" class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#progress" id="progress-tab" role="tab" data-toggle="tab" aria-controls="home"
+                           aria-expanded="false">合同号话费</a>
+                    </li>
+                    <li role="presentation" class="">
+                        <a href="#await" role="tab" id="await-tab" data-toggle="tab" aria-controls="profile"
+                           aria-expanded="true">合同号话费明细</a>
+                    </li>
+                </ul>
+
+                <div id="myTabContent" class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade active in" id="progress" aria-labelledby="progress-tab">
+                        <!-- 做 显示隐藏  添加  class =>  hide  -->
+                        <ul class="clearfix">
+                            <li>
+                                <p>合同号</p>
+                                <p class="edit">
+                                    <a class="ed" href="#" data-toggle="modal" data-target="#msgEditName"></a>
+                                    <a class="del" href="#" data-toggle="modal" data-target="#msgDel"></a>
+                                </p>
+                            </li>
+                            <a href="#" data-target="#uploadFile" data-toggle="modal">
+                                <li class="add-item">
+                                    <p>上传新话费明细</p>
+                                </li>
+                            </a>
+                        </ul>
+                        <table class="table table-hover table-striped text-center">
+                            <thead>
+                            <tr>
+                                <th>*</th>
+                                <th class="text-center">部门名称</th>
+                                <th class="text-center">汇总月份</th>
+                                <th class="text-center">月租</th>
+                                <th class="text-center">市话</th>
+                                <th class="text-center">国内长途</th>
+                                <th class="text-center">国际长途</th>
+                                <th class="text-center">IP电话</th>
+                                <th class="text-center">直线费</th>
+                                <th class="text-center">专线费</th>
+                                <th class="text-center">装机</th>
+                                <th class="text-center">移机</th>
+                                <th class="text-center">购机</th>
+                                <th class="text-center">合计</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>中国银行昆仑大厦</td>
+                                <td>201801</td>
+                                <td>6524.3</td>
+                                <td>6524.3</td>
+                                <td>6524.3</td>
+                                <td>6524.3</td>
+                                <td>6524.3</td>
+                                <td>6524.3</td>
+                                <td>6524.3</td>
+                                <td>6524.3</td>
+                                <td>6524.3</td>
+                                <td>6524.3</td>
+                                <td>¥364.21</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="await" aria-labelledby="await-tab">
+                        <ul class="clearfix">
+                            <li>
+                                <p>合同号</p>
+                                <p class="edit">
+                                    <a class="ed" href="#" data-toggle="modal" data-target="#msgEditName"></a>
+                                    <a class="del" href="#" data-toggle="modal" data-target="#msgDel"></a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="Page-box text-right">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination pagination-sm">
+                            <li class="disabled">
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+        </div>
+
+        <!--分页-->
+    </div>
+</div>
+
+
+<!-- 模态框-->
+
+<!--填写驳回原因-->
+<div class="modal fade" id="msgEditName" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">修改文件名</h4>
+            </div>
+            <form action="" class="form-horizontal">
+                <div class="modal-body clearfix">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="form-group">
+                        <label for="" class="col-sm-1 control-label"></label>
+                        <div class="col-sm-9">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                            <button type="button" class="btn btn-primary">发送</button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--  确认删除么？-->
+<div class="modal fade" id="msgDel" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-head text-center">
+                <h4 class="tost-mag">确认删除么?</h4>
+            </div>
+            <div class="modal-footer">
+                <div class="form-group text-center">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">发送</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- 上传文件  -->
+<div class="modal fade" id="uploadFile" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-head text-center">
+                <h4 class="tost-mag">确认删除么?</h4>
+            </div>
+            <form action="" enctype="multipart/form-data">
+
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="" class="col-sm-1 control-label">
+                            <div class="icon-img"></div>
+                            上传文件
+                        </label>
+                        <div class="col-sm-9">
+                            <input id="FileUpload" type="file" class="easyui-filebox" name="files"
+                                   data-options="prompt:'选择文件....'"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="form-group text-center">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary">发送</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="mask">
+    <div class="spinner">
+        <div class="spinner-container container1">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+        <div class="spinner-container container2">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+        <div class="spinner-container container3">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

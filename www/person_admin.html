@@ -70,6 +70,12 @@
                 <span>话费上传</span>
             </a>
         </li>
+        <li class="">
+            <a href="javascript:;">
+                <div class="icon"></div>
+                <span>业务统计</span>
+            </a>
+        </li>
     </ul>
 </div>
 
@@ -92,7 +98,7 @@
                     </div>
                 </div>
                 <div class="add-perspn-box">
-                    <a href="javascript:;" data-target="#toComplate" data-toggle="modal">添加人员</a>
+                    <a href="#" data-target="#toComplate" data-toggle="modal">添加人员</a>
                 </div>
             </div>
             <table class="table table-hover table-striped text-center">
@@ -117,10 +123,10 @@
                     <td>*******</td>
                     <td>1898736782659</td>
                     <td>
-                        <a href="javascript:;" data-target="#start" data-toggle="modal">点击查看</a>
+                        <a href="#" data-target="#start" data-toggle="modal">点击查看</a>
                     </td>
                     <td class="edit-box">
-                        <a class="edit" href="javascript:;"></a>
+                        <a class="edit" href="javascript:;" data-target="#toComplate" data-toggle="modal"></a>
                         <a class="del" href="javascript:;" data-target="#msgDetail" data-toggle="modal"></a>
                     </td>
                 </tr>
@@ -172,7 +178,7 @@
 
     </div>
 </div>
-<div class="modal fade" id="toComplate" tabindex="-1" role="dialog">
+<div class="modal fade add-person" id="toComplate" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -183,16 +189,22 @@
             <form action="" class="form-horizontal">
 
                 <div class="modal-body">
-                    <form class="form-horizontal">
                         <div class="form-group">
                             <label for="" class="col-sm-1 control-label">
                                 <div class="icon-img"></div>
                                 头像
                             </label>
-                            <div class="col-sm-9">
-
-                                <input type="file" class="form-control" id="" placeholder="注册时默认的名称，不可随便更改">
-                                <p class="err-msg ">错误提示信息</p>
+                            <div class="col-sm-9 clearfix">
+                                <div class="col-xs-2">
+                                    <div class="row">
+                                        <img class="add-avatar" src="../img/avatar1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-xs-10">
+                                    <div class="row">
+                                        <input type="file">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group">
@@ -245,7 +257,6 @@
                                 <p class="err-msg ">错误提示信息</p>
                             </div>
                         </div>
-                    </form>
                 </div>
                 <div class="modal-footer">
                     <div class="form-group">
