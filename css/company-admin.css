@@ -1,0 +1,256 @@
+.right-box .content-box .tab-list-top li {
+  width: 16.66%;
+  position: relative;
+  overflow: visible; }
+  .right-box .content-box .tab-list-top li.unread a span {
+    position: relative; }
+  .right-box .content-box .tab-list-top li.unread a span::after {
+    content: '!';
+    color: red;
+    font-weight: 900;
+    position: absolute;
+    right: -12px;
+    font-size: 22px;
+    top: -7px; }
+.right-box .panel {
+  padding: 30px; }
+  .right-box .panel p.title {
+    font-size: 18px;
+    color: #3e7ad8;
+    border-bottom: 1px solid #eff4f8;
+    padding-bottom: 20px;
+    margin-bottom: 20px; }
+.right-box .panel.com-info .form-group {
+  white-space: nowrap; }
+.right-box .panel.com-info .btn-add-com-logo {
+  border: 1px dashed #c0d5e6;
+  display: inline-block;
+  width: 106px;
+  height: 106px;
+  background-color: #eff4f8;
+  color: #3e7ad8;
+  outline: none;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 106px; }
+.right-box .panel.com-info .btn-add-com-logo-show {
+  display: inline-block;
+  width: 106px;
+  height: 106px;
+  border: 1px dashed #c0d5e6; }
+  .right-box .panel.com-info .btn-add-com-logo-show img {
+    width: 100% !important;
+    height: 100% !important; }
+.right-box .panel.com-info .add-com-logo-title {
+  position: relative;
+  top: 35px; }
+.right-box .panel.com-info .btn-title {
+  color: #999;
+  font-size: 12px;
+  margin-left: 10px;
+  white-space: nowrap; }
+.right-box .panel.com-dec-img .com-env-box {
+  width: 240px;
+  height: 104px;
+  float: left;
+  margin: 0 30px 30px 0;
+  position: relative; }
+  .right-box .panel.com-dec-img .com-env-box:hover em {
+    opacity: 1; }
+  .right-box .panel.com-dec-img .com-env-box img {
+    width: 100% !important;
+    height: 100% !important; }
+  .right-box .panel.com-dec-img .com-env-box em {
+    transition: .1s opacity ease-in;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0; }
+    .right-box .panel.com-dec-img .com-env-box em:before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 4px;
+      top: 50%;
+      margin-top: -2px;
+      left: 50%;
+      margin-left: -7px;
+      background-color: #fff;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px; }
+.right-box .panel.com-dec-img .add-com-env-box {
+  border: 1px dashed #c0d5e6;
+  background-color: #eff4f8;
+  text-align: center; }
+  .right-box .panel.com-dec-img .add-com-env-box a {
+    display: inline-block;
+    width: 100%;
+    height: 100%; }
+    .right-box .panel.com-dec-img .add-com-env-box a .add-con {
+      color: #3e7ad8;
+      margin: 30px 0 5px 0; }
+      .right-box .panel.com-dec-img .add-com-env-box a .add-con span {
+        position: relative;
+        left: 12px; }
+      .right-box .panel.com-dec-img .add-com-env-box a .add-con span:after {
+        position: absolute;
+        top: 0;
+        left: -15px;
+        content: '';
+        width: 1px;
+        height: 15px;
+        background-color: #3e7ad8; }
+      .right-box .panel.com-dec-img .add-com-env-box a .add-con span:before {
+        position: absolute;
+        top: 7px;
+        left: -22px;
+        content: '';
+        width: 15px;
+        height: 1px;
+        background-color: #3e7ad8; }
+    .right-box .panel.com-dec-img .add-com-env-box a .alt-title {
+      color: #ccc;
+      font-size: 12px; }
+.right-box .pro-int-box .panel-heading-pro {
+  margin-bottom: 30px; }
+.right-box .pro-int-box .pro-int {
+  margin-bottom: 10px; }
+  .right-box .pro-int-box .pro-int .pro-img {
+    float: left;
+    width: 228px;
+    height: 98px;
+    margin-right: 20px;
+    background-color: #eff4f8; }
+    .right-box .pro-int-box .pro-int .pro-img img {
+      width: 100%;
+      height: 100%; }
+  .right-box .pro-int-box .pro-int .int-content .edit-title {
+    margin-bottom: 32px; }
+    .right-box .pro-int-box .pro-int .int-content .edit-title span {
+      float: left;
+      font-size: 20px;
+      color: #222; }
+      .right-box .pro-int-box .pro-int .int-content .edit-title span a {
+        margin-left: 30px;
+        font-size: 16px;
+        color: #3e7ad8; }
+        .right-box .pro-int-box .pro-int .int-content .edit-title span a:hover {
+          text-decoration: underline; }
+    .right-box .pro-int-box .pro-int .int-content .edit-title p {
+      float: right; }
+      .right-box .pro-int-box .pro-int .int-content .edit-title p a {
+        position: relative;
+        color: #3e7ad8;
+        top: 4px; }
+      .right-box .pro-int-box .pro-int .int-content .edit-title p a:hover {
+        text-decoration: underline; }
+  .right-box .pro-int-box .pro-int .int-content .prod-int-con {
+    height: 65px;
+    line-height: 22px;
+    text-align: justify;
+    color: #666666;
+    overflow: hidden; }
+  .right-box .pro-int-box .pro-int .add-pro-img-box {
+    margin-bottom: 20px; }
+    .right-box .pro-int-box .pro-int .add-pro-img-box .add-pro-img {
+      width: 228px;
+      height: 98px;
+      background-color: #eff4f8;
+      border: 1px dashed #c0d5e6;
+      text-align: center;
+      line-height: 98px;
+      display: inline-block; }
+      .right-box .pro-int-box .pro-int .add-pro-img-box .add-pro-img a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #3e7ad8; }
+    .right-box .pro-int-box .pro-int .add-pro-img-box > span {
+      color: #999;
+      font-size: 12px;
+      margin-left: 10px; }
+  .right-box .pro-int-box .pro-int .show-pro-img {
+    width: 228px;
+    height: 98px;
+    margin-bottom: 20px;
+    border: 1px dashed #c0d5e6; }
+    .right-box .pro-int-box .pro-int .show-pro-img img {
+      width: 100% !important;
+      height: 100% !important; }
+.right-box .hot-indu-box .pro-int {
+  margin-bottom: 20px; }
+  .right-box .hot-indu-box .pro-int .add-pro-img-box .add-pro-img {
+    width: 80px;
+    height: 80px;
+    line-height: 80px; }
+  .right-box .hot-indu-box .pro-int .pro-img {
+    margin-top: 20px;
+    margin-left: 20px; }
+  .right-box .hot-indu-box .pro-int .show-pro-img {
+    width: 80px;
+    height: 80px; }
+  .right-box .hot-indu-box .pro-int .int-content {
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #eff4f8;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+    .right-box .hot-indu-box .pro-int .int-content .edit-title {
+      color: #999999; }
+      .right-box .hot-indu-box .pro-int .int-content .edit-title .leader-name {
+        color: #222;
+        font-size: 20px;
+        vertical-align: bottom;
+        margin-right: 15px; }
+      .right-box .hot-indu-box .pro-int .int-content .edit-title .leader-decri {
+        position: relative;
+        top: 4px;
+        font-size: 16px; }
+      .right-box .hot-indu-box .pro-int .int-content .edit-title p a {
+        position: relative;
+        top: 6px;
+        font-size: 14px; }
+    .right-box .hot-indu-box .pro-int .int-content .prod-int-con {
+      height: 48px; }
+.right-box .hot-indu-box .panel-heading-pro {
+  box-sizing: border-box; }
+  .right-box .hot-indu-box .panel-heading-pro .pro-img {
+    width: 80px;
+    height: 80px; }
+.right-box .com-adress-box ul.address-box {
+  font-size: 16px; }
+  .right-box .com-adress-box ul.address-box li {
+    margin-bottom: 10px; }
+  .right-box .com-adress-box ul.address-box a {
+    color: #3e7ad8;
+    font-size: 14px; }
+    .right-box .com-adress-box ul.address-box a:hover {
+      text-decoration: underline; }
+  .right-box .com-adress-box ul.address-box p {
+    float: left;
+    width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 50px;
+    font-size: 14px; }
+  .right-box .com-adress-box ul.address-box .btn-edit {
+    float: right;
+    font-size: 14px; }
+
+.show-map-box {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #eee;
+  margin-top: 20px;
+  border-radius: 4px;
+  overflow: hidden; }
+
+/*# sourceMappingURL=company-admin.css.map */

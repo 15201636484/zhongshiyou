@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/base_server.css">
+    <title>基本业务</title>
+</head>
+<body>
+
+<div class="top-box con-top-box">
+    <div class="top-box-bg clearfix">
+        <a href="javascript:;">
+            <div class="eco-title"></div>
+        </a>
+        <div class="top-right">
+            <ul class="ul-top-left">
+                <li>
+                    <a href="javascript:;">基本业务</a>
+                </li>
+            </ul>
+            <ul class="ul-top-right">
+                <li class="user-name clearfix">
+
+                    <a href="javascript:;">
+                        <div class="avatar-img prompt">
+                            <img src="../img/icon_prompt.png" alt="">
+                        </div>
+                    </a>
+
+                    <a href="javascript:;">
+                        <div class="avatar-img">
+                            <img src="../img/avatar1.png" alt="">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="left-box">
+    <!--bottom-->
+    <ul>
+        <li class="active">
+            <a href="javascript:;">
+                <div class="icon"></div>
+                <span>基本业务</span>
+            </a>
+        </li>
+        <li class="">
+            <a href="javascript:;">
+                <div class="icon"></div>
+                <span>故障维修</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <div class="icon"></div>
+                <span>人员管理</span>
+            </a>
+        </li>
+        <li class="">
+            <a href="javascript:;">
+                <div class="icon"></div>
+                <span>话费上传</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+<div class="right-box">
+    <div class="content-box">
+        <!-- 内容区-->
+        <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
+            <ul id="myTabs" class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#progress" id="progress-tab" role="tab"
+                                                          data-toggle="tab" aria-controls="home" aria-expanded="false">进行中</a>
+                </li>
+                <li role="presentation" class=""><a href="#await" role="tab" id="await-tab" data-toggle="tab"
+                                                    aria-controls="profile" aria-expanded="true">待处理</a></li>
+                <li role="presentation" class=""><a href="#complate" role="tab" id="complate-tab" data-toggle="tab"
+                                                    aria-controls="profile" aria-expanded="true">已完成</a></li>
+                <li role="presentation" class=""><a href="#refuse" role="tab" id="profile-tab" data-toggle="tab"
+                                                    aria-controls="profile" aria-expanded="true">已拒绝/撤销</a></li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div role="tabpanel" class="tab-pane fade active in" id="progress" aria-labelledby="progress-tab">
+                    <table class="table table-hover table-striped text-center">
+                        <thead>
+                        <tr>
+                            <th class="text-center">申报时间</th>
+                            <th class="text-center">业务</th>
+                            <th class="text-center">数量</th>
+                            <th class="text-center">房间号</th>
+                            <th class="text-center">固话</th>
+                            <th class="text-center">手机号</th>
+                            <th class="text-center">办公地址</th>
+                            <th class="text-center">申请表</th>
+                            <th class="text-center">确认/撤销</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>18/04/15/12：00</td>
+                            <td class="show-msg">
+                                <li class="dropdown dropdown-box">
+                                    <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="true">
+                                        装机
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="drop2">
+                                        <li><a href="#">移机</a></li>
+                                        <li><a href="#">拆机</a></li>
+                                    </ul>
+                                </li>
+                            </td>
+                            <td>3</td>
+                            <td>223</td>
+                            <td>59983524</td>
+                            <td>18219902335</td>
+                            <td>东直门</td>
+                            <td>
+                                <a href="javascript:;" class="look">点击查看</a>
+                            </td>
+                            <td>
+                                <a class="btn btn-primary" href="">完工</a>
+                                <a class="btn btn-default" href="javascript:void(0)" data-target="#msgDetail"
+                                   data-toggle="modal">驳回</a>
+                            </td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="await" aria-labelledby="await-tab">
+                    <table class="table table-hover table-striped text-center">
+                        <thead>
+                        <tr>
+                            <th class="text-center">申报时间</th>
+                            <th class="text-center">业务</th>
+                            <th class="text-center">数量</th>
+                            <th class="text-center">房间号</th>
+                            <th class="text-center">固话</th>
+                            <th class="text-center">手机号</th>
+                            <th class="text-center">办公地址</th>
+                            <th class="text-center">申请表</th>
+                            <th class="text-center">确认/撤销</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="unread">
+                            <td>18/04/15/12：00</td>
+                            <td class="show-msg">
+                                <li class="dropdown dropdown-box">
+                                    <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="true">
+                                        装机
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="drop2">
+                                        <li><a href="#">移机</a></li>
+                                        <li><a href="#">拆机</a></li>
+                                    </ul>
+                                </li>
+                            </td>
+                            <td>3</td>
+                            <td>223</td>
+                            <td>59983524</td>
+                            <td>18219902335</td>
+                            <td>东直门</td>
+                            <td>
+                                <a href="javascript:;" class="look">点击查看</a>
+                            </td>
+                            <td>
+                                <a class="btn btn-primary" href="javascript:;" data-target="#toComplate"
+                                   data-toggle="modal">去指派</a>
+                                <a class="btn btn-default" href="javascript:void(0)" data-target="#msgDetail"
+                                   data-toggle="modal">驳回</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="complate" aria-labelledby="complate-tab">
+                    <table class="table table-hover table-striped text-center">
+                        <thead>
+                        <tr>
+                            <th class="text-center">申报时间</th>
+                            <th class="text-center">业务</th>
+                            <th class="text-center">数量</th>
+                            <th class="text-center">房间号</th>
+                            <th class="text-center">固话</th>
+                            <th class="text-center">手机号</th>
+                            <th class="text-center">办公地址</th>
+                            <th class="text-center">申请表</th>
+                            <th class="text-center">操作师傅</th>
+                            <th class="text-center">操作结果</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>18/04/15/12：00</td>
+                            <td class="show-msg">
+                                <li class="dropdown dropdown-box">
+                                    <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="true">
+                                        装机
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="drop2">
+                                        <li><a href="#">移机</a></li>
+                                        <li><a href="#">拆机</a></li>
+                                    </ul>
+                                </li>
+                            </td>
+                            <td>3</td>
+                            <td>223</td>
+                            <td>59983524</td>
+                            <td>18219902335</td>
+                            <td>东直门</td>
+                            <td>
+                                <a href="javascript:;" class="look">点击查看</a>
+                            </td>
+                            <td>刘欢</td>
+                            <td>已完成</td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="refuse" aria-labelledby="refuse-tab">
+                    <table class="table table-hover table-striped text-center">
+                        <thead>
+                        <tr>
+                            <th class="text-center">申报时间</th>
+                            <th class="text-center">业务</th>
+                            <th class="text-center">数量</th>
+                            <th class="text-center">房间号</th>
+                            <th class="text-center">固话</th>
+                            <th class="text-center">手机号</th>
+                            <th class="text-center">办公地址</th>
+                            <th class="text-center">申请表</th>
+                            <th class="text-center">维修师傅</th>
+                            <th class="text-center">操作结果</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>18/04/15/12：00</td>
+                            <td class="show-msg">
+                                <li class="dropdown dropdown-box">
+                                    <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="true">
+                                        装机
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="drop2">
+                                        <li><a href="#">移机</a></li>
+                                        <li><a href="#">拆机</a></li>
+                                    </ul>
+                                </li>
+                            </td>
+                            <td>3</td>
+                            <td>223</td>
+                            <td>59983524</td>
+                            <td>18219902335</td>
+                            <td>东直门</td>
+                            <td>
+                                <a href="javascript:;" class="look">点击查看</a>
+                            </td>
+                            <td>刘欢</td>
+                            <td>已拒绝</td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--分页-->
+        <div class="Page-box text-right">
+            <nav aria-label="Page navigation">
+                <ul class="pagination pagination-sm">
+                    <li class="disabled">
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+<!-- 模态框-->
+
+<!--填写驳回原因-->
+<div class="modal fade" id="msgDetail" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">填写驳回原因</h4>
+            </div>
+            <form action="" class="form-horizontal">
+
+                <div class="modal-body">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="form-group">
+                        <label for="" class="col-sm-1 control-label"></label>
+                        <div class="col-sm-9">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                            <button type="button" class="btn btn-primary">发送</button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="toComplate" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">填写驳回原因</h4>
+            </div>
+            <form action="" class="form-horizontal">
+
+                <div class="modal-body">
+                    <table class="table table-hover table-striped text-center">
+                        <thead>
+                        <tr>
+                            <th class="text-center">姓名</th>
+                            <th class="text-center">当前任务数量</th>
+                            <th class="text-center">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>刘欢</td>
+                            <td>20</td>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>刘欢</td>
+                            <td>20</td>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>刘欢</td>
+                            <td>20</td>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>刘欢</td>
+                            <td>20</td>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>刘欢</td>
+                            <td>20</td>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <div class="form-group">
+                        <label for="" class="col-sm-1 control-label"></label>
+                        <div class="col-sm-9 text-right">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                            <button type="button" class="btn btn-primary">发送</button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
