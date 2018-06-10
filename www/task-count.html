@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/public.css">
     <link rel="stylesheet" href="../css/base_server.css">
     <title>话费查询</title>
+
 </head>
 <body>
 
@@ -86,16 +87,10 @@
             <div class="panel-body">
                 <div class="con-title clearfix">
                     <div class="col-md-2 col-md-offset-8">
-                        <select class="form-control" name="" id="">
-                            <option value="">请选择</option>
-                            <option value="">2018-06-03</option>
-                        </select>
+                        <input type="text" class="form-control layui-input" id="startDate">
                     </div>
                     <div class="col-md-2">
-                        <select class="form-control" name="" id="">
-                            <option value="">请选择</option>
-                            <option value="">2018-06-03</option>
-                        </select>
+                        <input type="text" class="form-control " id="endDate">
                     </div>
                 </div>
             </div>
@@ -120,7 +115,7 @@
                     </tr>
                     </tbody>
                 </table>
-            </div>
+            </div>n
             <!--  分页 -->
             <div class="Page-box text-right">
                 <nav aria-label="Page navigation">
@@ -151,7 +146,15 @@
 
 <script src="../js/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
-
+<script src="../js/laydate.js"></script>
+<script>
+    laydate.render({
+        elem: '#startDate'
+    });
+    laydate.render({
+        elem: '#endDate'
+    });
+</script>
 </body>
 </html>
 

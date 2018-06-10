@@ -128,11 +128,13 @@ html, body {
         position: absolute;
         width: 16px;
         height: 16px;
-        background: url("../img/icon-search.png") no-repeat 0 0;
-        background-size: 100% 100%;
+        //background: url("../img/icon-search.png") no-repeat 0 0;
+        background: url("../img/iconAll.png") no-repeat 0 0;
+        //background-size: 100% 100%;
         top: 50%;
         margin-top: -8px;
         right: 10px;
+        background-position: -68px -35px;
       }
     }
     .reset-box {
@@ -143,11 +145,13 @@ html, body {
         float: left;
         width: 15px;
         height: 15px;
-        background: url("../img/icon_reset.png") no-repeat 0 0;
-        background-size: 100% 100%;
+        //background: url("../img/icon_reset.png") no-repeat 0 0;
+        background: url("../img/iconAll.png") no-repeat 0 0;
+        //background-size: 100% 100%;
         position: absolute;
         top: 7px;
         left: 16px;
+        background-position:-19px -46px;
       }
       a {
         color: #999999;
@@ -269,9 +273,11 @@ html, body {
       height: 230px;
       background: #fff;
       text-align: center;
-      line-height: 230px;
+      //line-height: 230px;
       position: relative;
       margin: 0 15px 15px 0;
+      padding-top: 80px;
+
       p.edit {
         width: 40px;
         height: 20px;
@@ -297,9 +303,12 @@ html, body {
         }
       }
       &.add-item {
-        line-height: 285px;
+        //line-height: 285px;
         color: #999;
         position: relative;
+        p{
+          padding-top: 60px;
+        }
         &::after {
           content: '';
           position: absolute;

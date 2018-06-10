@@ -177,8 +177,8 @@ html {
       line-height: 70px;
       font-size: 18px;
       letter-spacing: 2px;
-      background: url("../img/logo.png") no-repeat 0 0;
-      background-size: 100% 100%;
+      background: url("../img/logo.png") no-repeat 13px 16px;
+      background-size:  130px;
     }
   }
   .ul-top-left {
@@ -316,9 +316,9 @@ html {
           width: 20px;
           height: 20px;
           margin-right: 10px;
-          background-image: url(../img/icon.png);
+          background-image: url(../img/iconAll.png);
           background-repeat: no-repeat;
-          vertical-align: middle;
+          vertical-align: top;
         }
 
       }
@@ -327,40 +327,41 @@ html {
         color: #fff;
         letter-spacing: 1px;
       }
+      &:nth-child(1) .icon {
+        background-position: -34px -44px;
+      }
+      &.active:nth-child(1) .icon,
+      &:nth-child(1):hover .icon {
+        background-position: -67px -16px;
+      }
+
       &:nth-child(2) .icon {
-        background-position: -35px -1px;
+        background-position: -16px -24px;
       }
       &.active:nth-child(2) .icon,
       &:nth-child(2):hover .icon {
-        background-position: -75px -1px;
+        background-position: -48px 1px;
       }
       &:nth-child(3) .icon {
-        background-position: -115px -1px;
+        background-position: -49px -17px;
       }
       &.active:nth-child(3) .icon,
       &:nth-child(3):hover .icon {
-        background-position: -155px -1px;
+        background-position: -68px 2px;
       }
       &:nth-child(4) .icon {
-        background-position: -341px 0;
+        background-position: 1px -63px;
       }
       &.active:nth-child(4) .icon,
       &:nth-child(4):hover .icon {
-        background-position: -377px 0;
+        background-position: 1px -44px;
       }
       &:nth-child(5) .icon {
-        background-position: -194px -1px;
+        background-position: -16px -64px;
       }
       &.active:nth-child(5) .icon,
       &:nth-child(5):hover .icon {
-        background-position: -230px -1px;
-      }
-      &:nth-child(6) .icon {
-        background-position: -267px -1px;
-      }
-      &.active:nth-child(6) .icon,
-      &:nth-child(6):hover .icon {
-        background-position: -304px -1px;
+        background-position: 0px -3px;
       }
     }
   }
@@ -589,19 +590,6 @@ html {
   color: #427ee0;
   margin-top: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
