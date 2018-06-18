@@ -53,6 +53,10 @@ a:hover {
   @extend %btn;
 }
 
+html {
+  overflow: hidden;
+}
+
 p {
   margin-bottom: 0;
 }
@@ -154,7 +158,7 @@ html {
   .top-box-bg {
     background-color: #fff;
     height: 100%;
-    overflow: hidden;
+    //overflow: hidden;
     & > a {
       width: 160px;
       height: 100%;
@@ -178,7 +182,7 @@ html {
       font-size: 18px;
       letter-spacing: 2px;
       background: url("../img/logo.png") no-repeat 13px 16px;
-      background-size:  130px;
+      background-size: 130px;
     }
   }
   .ul-top-left {
@@ -221,6 +225,7 @@ html {
       cursor: pointer;
       a {
         color: #666;
+        padding: 30px 0;
       }
       &.user-name {
         padding-right: 30px;
@@ -228,6 +233,13 @@ html {
         div {
           display: inline-block;
           margin-left: 20px;
+        }
+        .avatar-img-box {
+          margin-left: 0;
+          padding-bottom: 30px;
+          &:hover .posi-list {
+            display: block;
+          }
         }
         .avatar-img {
           width: 22px;
@@ -237,6 +249,34 @@ html {
             width: 100%;
             height: 100%;
           }
+
+          .posi-list {
+            position: absolute;
+            top: 35px;
+            right: 0;
+            display: none;
+            background-color: #fff;
+            box-shadow: 0 0 10px #ccc;
+            //margin-left: -50px;
+            padding: 10px 0;
+            li {
+              white-space: nowrap;
+              padding: 5px 50px 4px 20px;
+              position: relative;
+              display: block;
+              text-align: center;
+              a {
+                display: block;
+                width: 100%;
+                padding: 0;
+
+              }
+              & a:hover {
+                color: $bg-lf-top--color;
+              }
+            }
+          }
+
         }
         .prompt::after {
           content: '';
@@ -252,27 +292,7 @@ html {
           background-color: $err-color;
         }
       }
-      .posi-list {
-        position: absolute;
-        top: 40px;
-        right: 10px;
-        display: none;
-        background-color: #fff;
-        box-shadow: 0 0 10px #ccc;
-        margin-left: -50px;
-        padding: 10px 0;
-        li {
-          white-space: nowrap;
-          padding: 5px 20px;
-          position: relative;
-          display: block;
-          text-align: center;
-          & a:hover {
-            color: $bg-lf-top--color;
-            border-bottom: 1px solid $bg-lf-top--color;
-          }
-        }
-      }
+
     }
   }
 }
@@ -591,6 +611,48 @@ html {
   margin-top: 10px;
 }
 
+// 消息提示框
+.prompt-box {
+  position: fixed;
+  top: 150px;
+  right: -350px;
+  width: 340px;
+  height: 215px;
+  background: #fff;
+  box-shadow: 0 0 10px #ccc;
+  transition: .3s all ease-in;
+  &.prompt-box-ac{
+    right: 20px;
+  }
+  z-index: 999;
+  text-align: center;
+  .title {
+    font-size: 16px;
+    color: #465C66;
+    padding-top: 30px;
+    margin-bottom: 20px;
+  }
+  .con {
+    color: #999;
+    margin-bottom: 40px;
+  }
+  a {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 10px 15px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+  .btn-exit {
+    color: #333;
+  }
+  .btn-detail {
+    color: #fff;
+    background: #FC2449;
+  }
+
+}
 
 
 

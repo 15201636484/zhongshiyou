@@ -17,6 +17,9 @@ a:hover {
   background-color: #3e7ad8;
   margin-right: 20px; }
 
+html {
+  overflow: hidden; }
+
 p {
   margin-bottom: 0; }
 
@@ -100,8 +103,7 @@ html {
   background-color: red; }
   .con-top-box .top-box-bg {
     background-color: #fff;
-    height: 100%;
-    overflow: hidden; }
+    height: 100%; }
     .con-top-box .top-box-bg > a {
       width: 160px;
       height: 100%;
@@ -158,13 +160,19 @@ html {
       position: relative;
       cursor: pointer; }
       .con-top-box .ul-top-right li a {
-        color: #666; }
+        color: #666;
+        padding: 30px 0; }
       .con-top-box .ul-top-right li.user-name {
         padding-right: 30px;
         margin-right: 3px; }
         .con-top-box .ul-top-right li.user-name div {
           display: inline-block;
           margin-left: 20px; }
+        .con-top-box .ul-top-right li.user-name .avatar-img-box {
+          margin-left: 0;
+          padding-bottom: 30px; }
+          .con-top-box .ul-top-right li.user-name .avatar-img-box:hover .posi-list {
+            display: block; }
         .con-top-box .ul-top-right li.user-name .avatar-img {
           width: 22px;
           height: 22px;
@@ -172,6 +180,26 @@ html {
           .con-top-box .ul-top-right li.user-name .avatar-img img {
             width: 100%;
             height: 100%; }
+          .con-top-box .ul-top-right li.user-name .avatar-img .posi-list {
+            position: absolute;
+            top: 35px;
+            right: 0;
+            display: none;
+            background-color: #fff;
+            box-shadow: 0 0 10px #ccc;
+            padding: 10px 0; }
+            .con-top-box .ul-top-right li.user-name .avatar-img .posi-list li {
+              white-space: nowrap;
+              padding: 5px 50px 4px 20px;
+              position: relative;
+              display: block;
+              text-align: center; }
+              .con-top-box .ul-top-right li.user-name .avatar-img .posi-list li a {
+                display: block;
+                width: 100%;
+                padding: 0; }
+              .con-top-box .ul-top-right li.user-name .avatar-img .posi-list li a:hover {
+                color: #3e7ad8; }
         .con-top-box .ul-top-right li.user-name .prompt::after {
           content: '';
           display: block;
@@ -184,24 +212,6 @@ html {
           top: 0;
           right: 0;
           background-color: #ff3038; }
-      .con-top-box .ul-top-right li .posi-list {
-        position: absolute;
-        top: 40px;
-        right: 10px;
-        display: none;
-        background-color: #fff;
-        box-shadow: 0 0 10px #ccc;
-        margin-left: -50px;
-        padding: 10px 0; }
-        .con-top-box .ul-top-right li .posi-list li {
-          white-space: nowrap;
-          padding: 5px 20px;
-          position: relative;
-          display: block;
-          text-align: center; }
-          .con-top-box .ul-top-right li .posi-list li a:hover {
-            color: #3e7ad8;
-            border-bottom: 1px solid #3e7ad8; }
 
 .left-box {
   position: absolute;
@@ -436,5 +446,39 @@ html {
   font-size: 12px;
   color: #427ee0;
   margin-top: 10px; }
+
+.prompt-box {
+  position: fixed;
+  top: 150px;
+  right: -350px;
+  width: 340px;
+  height: 215px;
+  background: #fff;
+  box-shadow: 0 0 10px #ccc;
+  transition: .3s all ease-in;
+  z-index: 999;
+  text-align: center; }
+  .prompt-box.prompt-box-ac {
+    right: 20px; }
+  .prompt-box .title {
+    font-size: 16px;
+    color: #465C66;
+    padding-top: 30px;
+    margin-bottom: 20px; }
+  .prompt-box .con {
+    color: #999;
+    margin-bottom: 40px; }
+  .prompt-box a {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 10px 15px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+  .prompt-box .btn-exit {
+    color: #333; }
+  .prompt-box .btn-detail {
+    color: #fff;
+    background: #FC2449; }
 
 /*# sourceMappingURL=public.css.map */
