@@ -1,5 +1,23 @@
 $acolor: #3e7ad8;
 $err-color: #ff3038;
+$placeColor: #ccc;
+
+input::-webkit-input-placeholder {
+  color: $placeColor;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: $placeColor;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: $placeColor;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $placeColor;
+}
+
 html, body {
   height: 100%;
 }
@@ -258,6 +276,7 @@ html, body {
     -moz-border-radius: 50%;
     border-radius: 50%;
     overflow: hidden;
+    margin-bottom: 17px;
   }
 }
 
@@ -329,7 +348,7 @@ html, body {
           position: absolute;
           width: 2px;
           height: 30px;
-          background-color:#D7D7D7;
+          background-color: #D7D7D7;
           top: 56px;
           left: 50%;
           margin-left: -1px;

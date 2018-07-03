@@ -1,3 +1,18 @@
+input::-webkit-input-placeholder {
+  color: #ccc; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #ccc; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #ccc; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ccc; }
+
 html, body {
   height: 100%; }
 
@@ -191,7 +206,8 @@ html, body {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 17px; }
 
 .phone-charges {
   background-color: #eff4f8; }
