@@ -301,8 +301,6 @@
                             <td>刘欢</td>
                             <td>已拒绝</td>
                         </tr>
-
-
                         </tbody>
                     </table>
                 </div>
@@ -552,22 +550,12 @@
                         <!-- 轮播（Carousel）指标 -->
                         <ol class="carousel-indicators">
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
                         </ol>
                         <!-- 轮播（Carousel）项目 -->
                         <div class="carousel-inner">
                             <div class="item active">
                                 <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1095007311,2054534482&fm=27&gp=0.jpg"
                                      alt="First slide">
-                            </div>
-                            <div class="item">
-                                <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1095007311,2054534482&fm=27&gp=0.jpg"
-                                     alt="Second slide">
-                            </div>
-                            <div class="item">
-                                <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1095007311,2054534482&fm=27&gp=0.jpg"
-                                     alt="Third slide">
                             </div>
                         </div>
                         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -584,8 +572,7 @@
         </div>
     </div>
 </div>
-
-
+<audio src="../audio/tip.mp3"></audio>
 <script src="../js/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/laydate.js"></script>
@@ -601,6 +588,17 @@
         })
 
         function run() {
+//            播放声音
+            var audio = $('audio')[0];
+            if(audio!==null){
+                //检测播放是否已暂停.audio.paused 在播放器播放时返回false.
+//                alert(audio.paused);
+                if(audio.paused)                     {
+                    audio.play();//audio.play();// 这个就是播放
+                }else{
+                    audio.pause();// 这个就是暂停
+                }
+            }
             var bool = false;
             $('.prompt-box').addClass('prompt-box-ac');
             var timer = setTimeout(function () {
