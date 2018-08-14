@@ -257,11 +257,12 @@ html {
             display: none;
             background-color: #fff;
             box-shadow: 0 0 10px #ccc;
-            //margin-left: -50px;
             padding: 10px 0;
+            width: 100px;
+
             li {
-              white-space: nowrap;
-              padding: 5px 50px 4px 20px;
+              //white-space: nowrap;
+              padding: 5px 20px 5px 20px;
               position: relative;
               display: block;
               text-align: center;
@@ -276,8 +277,12 @@ html {
               }
             }
           }
+          &.tost .posi-list {
+            width: 200px;
+          }
 
         }
+
         .prompt::after {
           content: '';
           display: block;
@@ -621,7 +626,7 @@ html {
   background: #fff;
   box-shadow: 0 0 10px #ccc;
   transition: .3s all ease-in;
-  &.prompt-box-ac{
+  &.prompt-box-ac {
     right: 20px;
   }
   z-index: 999;

@@ -186,10 +186,10 @@ html {
             display: none;
             background-color: #fff;
             box-shadow: 0 0 10px #ccc;
-            padding: 10px 0; }
+            padding: 10px 0;
+            width: 100px; }
             .con-top-box .ul-top-right li.user-name .avatar-img .posi-list li {
-              white-space: nowrap;
-              padding: 5px 50px 4px 20px;
+              padding: 5px 20px 5px 20px;
               position: relative;
               display: block;
               text-align: center; }
@@ -199,6 +199,8 @@ html {
                 padding: 0; }
               .con-top-box .ul-top-right li.user-name .avatar-img .posi-list li a:hover {
                 color: #3e7ad8; }
+          .con-top-box .ul-top-right li.user-name .avatar-img.tost .posi-list {
+            width: 200px; }
         .con-top-box .ul-top-right li.user-name .prompt::after {
           content: '';
           display: block;

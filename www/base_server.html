@@ -26,9 +26,27 @@
                 <li class="user-name clearfix">
 
                     <a href="javascript:;">
-                        <div class="avatar-img prompt">
-                            <img src="../img/icon_prompt.png" alt="">
+                        <div class="avatar-img-box">
+
+                            <div class="avatar-img prompt tost">
+                                <img src="../img/icon_prompt.png" alt="">
+                                <ul class="posi-list">
+                                    <li>
+                                        <a href="javascript:;">管理员进行了驳回管理员进行了驳回管理员进行了驳回管理员进行了驳回</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">管理员进行了驳回</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">管理员进行了驳回</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">管理员进行了驳回</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+
                     </a>
                     <div class="avatar-img-box">
                         <div class="avatar-img">
@@ -348,7 +366,8 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span>
                 </button>
                 <h4 class="modal-title">填写驳回原因</h4>
             </div>
@@ -452,7 +471,8 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span>
                 </button>
                 <h4 class="modal-title">填写驳回原因</h4>
             </div>
@@ -539,7 +559,8 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span>
                 </button>
                 <h4 class="modal-title">申请表预览</h4>
             </div>
@@ -590,12 +611,12 @@
         function run() {
 //            播放声音
             var audio = $('audio')[0];
-            if(audio!==null){
+            if (audio !== null) {
                 //检测播放是否已暂停.audio.paused 在播放器播放时返回false.
 //                alert(audio.paused);
-                if(audio.paused)                     {
+                if (audio.paused) {
                     audio.play();//audio.play();// 这个就是播放
-                }else{
+                } else {
                     audio.pause();// 这个就是暂停
                 }
             }

@@ -366,5 +366,32 @@ html, body {
   40% {
     transform: scale(1);
     -webkit-transform: scale(1); } }
+td.descript {
+  position: relative; }
+  td.descript .descript-content {
+    z-index: 200;
+    text-align: left;
+    position: absolute;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #EEF4F9;
+    border-radius: 4px;
+    top: 40px;
+    left: 50%;
+    margin-left: -150px;
+    color: #666;
+    border: 1px solid #EEF4F9;
+    display: none; }
+    td.descript .descript-content:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      border: 6px solid transparent;
+      border-bottom: 6px solid #EEF4F9;
+      top: -12px;
+      left: 50%;
+      margin-left: -3px;
+      z-index: 1000; }
 
 /*# sourceMappingURL=base_server.css.map */
