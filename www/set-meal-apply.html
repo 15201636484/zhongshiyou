@@ -7,8 +7,7 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/public.css">
     <link rel="stylesheet" href="../css/base_server.css">
-    <!--<link rel="stylesheet" href="../css/fix.css">-->
-    <title>故障维修</title>
+    <title>中国移动</title>
 </head>
 <body>
 
@@ -107,15 +106,12 @@
 
         <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
             <ul id="myTabs" class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#progress" id="progress-tab" role="tab"
-                                                          data-toggle="tab" aria-controls="home" aria-expanded="false">进行中</a>
-                </li>
-                <li role="presentation" class=""><a href="#await" role="tab" id="await-tab" data-toggle="tab"
+                <li role="presentation" class="active"><a href="#await" role="tab" id="await-tab" data-toggle="tab"
                                                     aria-controls="profile" aria-expanded="true">待处理</a></li>
                 <li role="presentation" class=""><a href="#complate" role="tab" id="complate-tab" data-toggle="tab"
                                                     aria-controls="profile" aria-expanded="true">已完成</a></li>
                 <li role="presentation" class=""><a href="#refuse" role="tab" id="profile-tab" data-toggle="tab"
-                                                    aria-controls="profile" aria-expanded="true">已拒绝/撤销</a></li>
+                                                    aria-controls="profile" aria-expanded="true">已拒绝</a></li>
             </ul>
             <div id="myTabContent" class="tab-content">
                 <div role="tabpanel" class="tab-pane fade active in" id="progress" aria-labelledby="progress-tab">
@@ -123,54 +119,34 @@
                         <thead>
                         <tr>
                             <th class="text-center">申报时间</th>
-                            <th class="text-center">房间号</th>
-                            <th class="text-center">固话</th>
+                            <th class="text-center">单位部门</th>
+                            <th class="text-center">员工8位办公电话</th>
                             <th class="text-center">手机号</th>
-                            <th class="text-center">办公地址</th>
-                            <th class="text-center">故障现象</th>
-                            <th class="text-center">维修师傅</th>
-                            <th class="text-center">确认/撤销</th>
+                            <th class="text-center">记住姓名</th>
+                            <th class="text-center">办公类型</th>
+                            <th class="text-center">套餐类型</th>
+                            <th class="text-center">品牌</th>
+                            <th class="text-center">预览</th>
+                            <th class="text-center">下载</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>18/04/15/12：00</td>
-                            <td class="show-msg">508</td>
-                            <td>59983524</td>
-                            <td>18219902335</td>
-                            <td>东直门</td>
-                            <td class="descript">
-                                <span>电话无声音</span>
-                                <div class="descript-content">
-                                    电话无声音电话无声音电话无声音电话无声音电话无声音电话无声音电话无声音电话无声音电话无声音电话无声音电话无声音电话无声音
-                                </div>
-                            </td>
-                            <td>刘欢</td>
-                            <td>
-                                <a class="btn btn-primary" href="">完工</a>
-                                <a class="btn btn-default" href="javascript:void(0)" data-target="#msgDetail"
-                                   data-toggle="modal">撤销</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>18/04/15/12：00</td>
-                            <td class="show-msg">508</td>
-                            <td>59983524</td>
-                            <td>18219902335</td>
-                            <td>东直门</td>
-                            <td class="descript">
-                                <span>电话无声音</span>
-                                <div class="descript-content">电话无声音电话无声音</div>
-                            </td>
-                            <td>刘欢</td>
-                            <td>
-                                <a class="btn btn-primary" href="">完工</a>
-                                <a class="btn btn-default" href="javascript:void(0)" data-target="#msgDetail"
-                                   data-toggle="modal">撤销</a>
-                            </td>
-                        </tr>
-
-
+                            <tr>
+                                <td>18/04/15/12：00</td>
+                                <td class="show-msg">通信网络部</td>
+                                <td>59983524</td>
+                                <td>18219902335</td>
+                                <td>厂长</td>
+                                <td>任我用套餐-60</td>
+                                <td>刘欢</td>
+                                <td>全球通</td>
+                                <td>
+                                    <a data-target="#detail" data-toggle="modal">预览</a>
+                                </td>
+                                <td>
+                                    <a href="javascript:;">去下载</a>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -179,44 +155,32 @@
                         <thead>
                         <tr>
                             <th class="text-center">申报时间</th>
-                            <th class="text-center">房间号</th>
-                            <th class="text-center">固话</th>
+                            <th class="text-center">单位部门</th>
+                            <th class="text-center">员工8位办公电话</th>
                             <th class="text-center">手机号</th>
-                            <th class="text-center">办公地址</th>
-                            <th class="text-center">故障现象</th>
-                            <th class="text-center">维修师傅</th>
-                            <th class="text-center">确认/撤销</th>
+                            <th class="text-center">记住姓名</th>
+                            <th class="text-center">办公类型</th>
+                            <th class="text-center">套餐类型</th>
+                            <th class="text-center">品牌</th>
+                            <th class="text-center">预览</th>
+                            <th class="text-center">下载</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
                             <td>18/04/15/12：00</td>
-                            <td class="show-msg">508</td>
+                            <td class="show-msg">通信网络部</td>
                             <td>59983524</td>
                             <td>18219902335</td>
-                            <td>东直门</td>
-                            <td>电话无声音</td>
+                            <td>厂长</td>
+                            <td>任我用套餐-60</td>
                             <td>刘欢</td>
+                            <td>全球通</td>
                             <td>
-                                <a class="btn btn-primary" href="javascript:void(0)" data-target="#toComplate"
-                                   data-toggle="modal">去指派</a>
-                                <a class="btn btn-default" href="javascript:void(0)" data-target="#msgDetail"
-                                   data-toggle="modal">撤销</a>
+                                <a href="javascript:;">预览</a>
                             </td>
-                        </tr>
-                        <tr>
-                            <td>18/04/15/12：00</td>
-                            <td class="show-msg">508</td>
-                            <td>59983524</td>
-                            <td>18219902335</td>
-                            <td>东直门</td>
-                            <td>电话无声音</td>
-                            <td>刘欢</td>
                             <td>
-                                <a class="btn btn-primary" href="javascript:void(0)" data-target="#toComplate"
-                                   data-toggle="modal">去指派</a>
-                                <a class="btn btn-default" href="javascript:void(0)" data-target="#msgDetail"
-                                   data-toggle="modal">撤销</a>
+                                <a href="javascript:;">去下载</a>
                             </td>
                         </tr>
                         </tbody>
@@ -227,28 +191,34 @@
                         <thead>
                         <tr>
                             <th class="text-center">申报时间</th>
-                            <th class="text-center">房间号</th>
-                            <th class="text-center">固话</th>
+                            <th class="text-center">单位部门</th>
+                            <th class="text-center">员工8位办公电话</th>
                             <th class="text-center">手机号</th>
-                            <th class="text-center">办公地址</th>
-                            <th class="text-center">故障现象</th>
-                            <th class="text-center">维修师傅</th>
-                            <th class="text-center">操作状态</th>
+                            <th class="text-center">记住姓名</th>
+                            <th class="text-center">办公类型</th>
+                            <th class="text-center">套餐类型</th>
+                            <th class="text-center">品牌</th>
+                            <th class="text-center">预览</th>
+                            <th class="text-center">下载</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
                             <td>18/04/15/12：00</td>
-                            <td class="show-msg">508</td>
+                            <td class="show-msg">通信网络部</td>
                             <td>59983524</td>
                             <td>18219902335</td>
-                            <td>东直门</td>
-                            <td>电话无声音</td>
+                            <td>厂长</td>
+                            <td>任我用套餐-60</td>
                             <td>刘欢</td>
-                            <td>已完成</td>
+                            <td>全球通</td>
+                            <td>
+                                <a href="javscripr:;">预览</a>
+                            </td>
+                            <td>
+                                <a href="javascript:;">去下载</a>
+                            </td>
                         </tr>
-
-
                         </tbody>
                     </table>
                 </div>
@@ -414,6 +384,71 @@
                     </div>
                 </div>
 
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade  modal-detail" id="detail" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">申请表预览</h4>
+            </div>
+            <form action="" class="form-horizontal">
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li class="clearfix">
+                            <div class="item-lf">单位</div>
+                            <div class="item-ri">中石油</div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="item-lf">部门</div>
+                            <div class="item-ri">信息工程部</div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="item-lf">员工8位办公电话</div>
+                            <div class="item-ri">62096785</div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="item-lf">套餐联系手机</div>
+                            <div class="item-ri">18210091930</div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="item-lf">机主姓名</div>
+                            <div class="item-ri">张国臣</div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="item-lf">套餐类型</div>
+                            <div class="item-ri">任我用套餐-60</div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="item-lf">当前品牌</div>
+                            <div class="item-ri">全球通</div>
+                        </li>
+                        <li class="clearfix id-img">
+                            <div class="item-lf">证件照片</div>
+                            <div class="item-ri">
+                                <div class="img">
+                                    <img src="../img/id-img1.png" alt="">
+                                </div>
+                                <div class="img">
+                                    <img src="../img/id-img1.png" alt="">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btn-main">
+                        <div class="btn-item">
+                            <input class="pass" type="button" value="通过">
+                        </div>
+                        <div class="btn-item">
+                            <input class="refuse" type="button" value="拒绝">
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
     </div>

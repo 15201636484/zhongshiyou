@@ -448,4 +448,53 @@ td.descript {
   margin: 10px auto;
   font-size: 10px; }
 
+.modal-detail .modal-body {
+  box-sizing: border-box;
+  padding: 0 70px; }
+  .modal-detail .modal-body ul {
+    margin-bottom: 20px; }
+  .modal-detail .modal-body li {
+    line-height: 22px;
+    font-size: 15px;
+    margin-bottom: 15px; }
+    .modal-detail .modal-body li > div {
+      white-space: nowrap; }
+    .modal-detail .modal-body li:last-child {
+      margin-bottom: 0; }
+    .modal-detail .modal-body li.id-img .item-lf {
+      line-height: 55px; }
+    .modal-detail .modal-body li.id-img .item-ri .img {
+      width: 100px;
+      float: left;
+      margin-right: 5px; }
+      .modal-detail .modal-body li.id-img .item-ri .img img {
+        width: 100%; }
+    .modal-detail .modal-body li .item-lf {
+      float: left;
+      width: 120px;
+      line-height: 22px;
+      color: #000;
+      font-size: 15px;
+      margin-right: 40px;
+      text-align: right; }
+    .modal-detail .modal-body li .item-ri {
+      color: #999; }
+  .modal-detail .modal-body .btn-main {
+    text-align: center; }
+    .modal-detail .modal-body .btn-main input {
+      width: 200px;
+      height: 44px;
+      background-color: #4B4C5E;
+      border-radius: 3px;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+      border: none;
+      outline: none; }
+    .modal-detail .modal-body .btn-main .pass {
+      margin-bottom: 5px; }
+    .modal-detail .modal-body .btn-main .refuse {
+      background-color: transparent;
+      color: #4B4C5E; }
+
 /*# sourceMappingURL=base_server.css.map */

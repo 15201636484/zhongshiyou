@@ -598,6 +598,76 @@ td.descript {
   font-size: 10px;
 }
 
+.modal-detail {
+  .modal-body {
+    box-sizing: border-box;
+    padding: 0 70px;
+    ul {
+      margin-bottom: 20px;
+    }
+    li {
+      line-height: 22px;
+      font-size: 15px;
+      margin-bottom: 15px;
+      >div{
+        white-space: nowrap;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &.id-img {
+        .item-lf {
+          line-height: 55px;
+        }
+        .item-ri {
+          .img {
+            width: 100px;
+            float: left;
+            margin-right: 5px;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .item-lf {
+        float: left;
+        width: 120px;
+        line-height: 22px;
+        color: #000;
+        font-size: 15px;
+        margin-right: 40px;
+        text-align: right;
+      }
+      .item-ri {
+        color: #999;
+      }
+    }
+    .btn-main {
+      text-align: center;
+      input {
+        width: 200px;
+        height: 44px;
+        background-color: #4B4C5E;
+        border-radius: 3px;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        border: none;
+        outline: none;
+      }
+      .pass{
+        margin-bottom: 5px;
+      }
+      .refuse {
+        background-color: transparent;
+        color: #4B4C5E;
+      }
+    }
+  }
+}
+
+
 
 
 
