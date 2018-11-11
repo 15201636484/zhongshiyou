@@ -398,11 +398,19 @@ html {
       }
 
       &:nth-child(7) .icon {
-        background-position: -69px -64px;
+        background-position: -69px -60px;
       }
       &.active:nth-child(7) .icon,
       &:nth-child(7):hover .icon {
-        background-position: -51px -64px;
+        background-position: -51px -60px;
+      }
+
+      &:nth-child(8) .icon {
+        background-position: -43px -79px;
+      }
+      &.active:nth-child(8) .icon,
+      &:nth-child(8):hover .icon {
+        background-position: -65px -79px;
       }
     }
   }

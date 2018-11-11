@@ -400,12 +400,21 @@ html body {
 }
 
 .left-box ul li:nth-child(7) .icon {
-  background-position: -69px -64px;
+  background-position: -69px -60px;
 }
 
 .left-box ul li.active:nth-child(7) .icon,
 .left-box ul li:nth-child(7):hover .icon {
-  background-position: -51px -64px;
+  background-position: -51px -60px;
+}
+
+.left-box ul li:nth-child(8) .icon {
+  background-position: -43px -79px;
+}
+
+.left-box ul li.active:nth-child(8) .icon,
+.left-box ul li:nth-child(8):hover .icon {
+  background-position: -65px -79px;
 }
 
 .right-box {
