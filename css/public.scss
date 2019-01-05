@@ -382,7 +382,7 @@ html {
         background-position: 1px -44px;
       }
       &:nth-child(5) .icon {
-        background-position: -16px -61px;
+        background-position: -16px -62px;
       }
       &.active:nth-child(5) .icon,
       &:nth-child(5):hover .icon {
@@ -390,11 +390,11 @@ html {
       }
 
       &:nth-child(6) .icon {
-        background-position: 2px -79px;
+        background-position: 2px -78px;
       }
       &.active:nth-child(6) .icon,
       &:nth-child(6):hover .icon {
-        background-position: -16px -79px;
+        background-position: -16px -78px;
       }
 
       &:nth-child(7) .icon {
@@ -406,10 +406,17 @@ html {
       }
 
       &:nth-child(8) .icon {
-        background-position: -43px -79px;
+        background-position: -15px -95px;
       }
       &.active:nth-child(8) .icon,
       &:nth-child(8):hover .icon {
+        background-position: 0 -95px;
+      }
+      &:nth-child(9) .icon {
+        background-position: -43px -79px;
+      }
+      &.active:nth-child(9) .icon,
+      &:nth-child(9):hover .icon {
         background-position: -65px -79px;
       }
     }

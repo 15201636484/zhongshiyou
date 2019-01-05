@@ -34,7 +34,8 @@ html {
     margin-bottom: 30px; }
   .login-box .checkbox {
     margin-bottom: 55px;
-    color: #999999; }
+    color: #999999;
+    user-select: none; }
   .login-box .btn {
     padding-top: 8px;
     padding-bottom: 8px;
